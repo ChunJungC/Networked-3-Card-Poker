@@ -1,4 +1,4 @@
-#🃏 Networked 3 Card Poker
+# 🃏 Networked 3 Card Poker
 
 CS 342 – Object-Oriented Programming | UIC
 
@@ -6,7 +6,7 @@ A full-stack desktop implementation of the casino game 3 Card Poker, built using
 
 The application demonstrates object-oriented design, client-server architecture, and real-time game state synchronization.
 
-###🏗️ Architecture
+### 🏗️ Architecture
 
 This project is structured as a two-module system inside one repository:
 
@@ -19,7 +19,7 @@ cs342-project3-3cardpoker-networked/
 │     └── src/
 └── README.md
 
-###Server
+### Server
 
 Handles socket connections
 
@@ -31,7 +31,7 @@ Sends results to clients
 
 Supports multiple clients using threads
 
-###Client
+### Client
 
 JavaFX graphical interface
 
@@ -41,7 +41,7 @@ Displays cards and results
 
 Updates bankroll dynamically
 
-###🎮 Game Features
+### 🎮 Game Features
 
 Ante and Pair Plus betting
 
@@ -57,7 +57,7 @@ Multiple rounds support
 
 Clean JavaFX UI with FXML and CSS
 
-###🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 Java 17
 
@@ -69,7 +69,7 @@ Maven
 
 JUnit 5
 
-###▶️ How to Run
+### ▶️ How to Run
 1️⃣ Start the Server
 cd server
 mvn clean compile exec:java
@@ -82,12 +82,12 @@ mvn clean compile exec:java
 
 The client will connect to the running server.
 
-###📡 Networking Overview
+### 📡 Networking Overview
 
 The client and server communicate using structured messages over TCP sockets.
 Each client session is handled in a separate thread to support concurrent gameplay.
 
-###🎯 Learning Objectives
+### 🎯 Learning Objectives
 
 This project demonstrates:
 
@@ -105,7 +105,7 @@ Maven project configuration
 
 Unit testing of core game logic
 
-###📚 Author
+### 📚 Author
 
 Roger Chiu
 Computer Science – University of Illinois Chicago
