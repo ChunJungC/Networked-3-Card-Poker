@@ -10,16 +10,7 @@ The application demonstrates object-oriented design, client-server architecture,
 
 This project is structured as a two-module system inside one repository:
 
-cs342-project3-3cardpoker-networked/
-├── server/
-│     ├── pom.xml
-│     └── src/
-├── client/
-│     ├── pom.xml
-│     └── src/
-└── README.md
-
-### Server
+#### Server
 
 Handles socket connections
 
@@ -31,7 +22,7 @@ Sends results to clients
 
 Supports multiple clients using threads
 
-### Client
+#### Client
 
 JavaFX graphical interface
 
