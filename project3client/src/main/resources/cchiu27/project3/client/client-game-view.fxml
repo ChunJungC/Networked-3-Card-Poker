@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cchiu27.project3.client.controllers.ClientGameController"
+            stylesheets="/cchiu27/project3/client/styles.css">
+
+    <top>
+        <VBox spacing="5" BorderPane.alignment="TOP_CENTER">
+            <MenuBar>
+                <Menu text="Options">
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                    <MenuItem text="Fresh Start" onAction="#handleFreshStart"/>
+                    <MenuItem text="New Look" onAction="#handleNewLook"/>
+                </Menu>
+            </MenuBar>
+            <Label text="Game Play" styleClass="header-label"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <Label text="Dealer Cards"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Label fx:id="dealerCard1" styleClass="card-label"/>
+                <Label fx:id="dealerCard2" styleClass="card-label"/>
+                <Label fx:id="dealerCard3" styleClass="card-label"/>
+            </HBox>
+
+            <Label text="Player Cards"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Label fx:id="playerCard1" styleClass="card-label"/>
+                <Label fx:id="playerCard2" styleClass="card-label"/>
+                <Label fx:id="playerCard3" styleClass="card-label"/>
+            </HBox>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox spacing="10" alignment="CENTER_RIGHT" BorderPane.alignment="CENTER_RIGHT">
+            <Label text="Bets"/>
+            <HBox spacing="5">
+                <Label text="Ante:"/>
+                <TextField fx:id="anteField" prefWidth="60"/>
+            </HBox>
+            <HBox spacing="5">
+                <Label text="Pair Plus:"/>
+                <TextField fx:id="pairPlusField" prefWidth="60"/>
+            </HBox>
+            <Button text="Place Bets" onAction="#handlePlaceBets"/>
+
+            <Separator/>
+
+            <Button text="PLAY" onAction="#handlePlay"/>
+            <Button text="FOLD" onAction="#handleFold"/>
+        </VBox>
+    </right>
+
+    <bottom>
+        <VBox spacing="5">
+            <HBox spacing="10">
+                <Label text="Total Winnings:"/>
+                <Label fx:id="totalWinningsLabel" text="0"/>
+                <Label text="Last Result:"/>
+                <Label fx:id="lastResultLabel" text="0"/>
+            </HBox>
+            <Label fx:id="infoLabel" text="Status messages here."/>
+        </VBox>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cchiu27.project3.client.controllers.ClientWelcomeController"
+            stylesheets="@styles.css">
+
+    <top>
+        <Label text="Three Card Poker" BorderPane.alignment="CENTER"
+               styleClass="header-label"/>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <TextField fx:id="ipField" promptText="Server IP Address"/>
+            <TextField fx:id="portField" promptText="Server Port"/>
+            <TextField fx:id="nameField" promptText="Your Name"/>
+
+            <Button text="Connect"
+                    onAction="#handleConnect"
+                    styleClass="primary-button"/>
+        </VBox>
+    </center>
+
+</BorderPane>

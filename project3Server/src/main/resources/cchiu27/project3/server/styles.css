@@ -1,0 +1,17 @@
+.title-label {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.header-label {
+    -fx-font-size: 22px;
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-font-size: 14px;
+}
+
+.list-view {
+    -fx-font-size: 13px;
+}

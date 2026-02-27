@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="cchiu27.project3.client.controllers.ClientResultController"
+      alignment="CENTER" spacing="15"
+      stylesheets="/cchiu27/project3/client/styles.css">
+
+    <Label text="Game Result" styleClass="header-label"/>
+
+    <Label fx:id="resultMessageLabel" text="Result message"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Net change this hand:"/>
+        <Label fx:id="netChangeLabel" text="0"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Total winnings:"/>
+        <Label fx:id="totalWinningsLabel" text="0"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Play Again" onAction="#handlePlayAgain"/>
+        <Button text="Exit" onAction="#handleExit"/>
+    </HBox>
+
+</VBox>

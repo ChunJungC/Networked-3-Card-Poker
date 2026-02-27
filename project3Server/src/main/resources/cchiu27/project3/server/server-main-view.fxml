@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cchiu27.project3.server.controllers.ServerMainController"
+            stylesheets="@styles.css">
+
+    <top>
+        <Label text="Server Running" styleClass="header-label" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <ListView fx:id="logList" />
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Stop Server" onAction="#handleStopServer"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
